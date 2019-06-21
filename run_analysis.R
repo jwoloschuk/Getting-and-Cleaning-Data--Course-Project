@@ -95,7 +95,7 @@ names(selected_DF) <- gsub("angle", "Angle",names(selected_DF))
 Tidy_DF <- selected_DF %>% group_by(Subject, Activity_ID) %>% summarize_all(funs(mean))
 
 
-# Move up two directory and create final data text file
+# Move up two directory and create final tidy data text file
 
 setwd("../..")
 write.table(Tidy_DF, "Final_Tidy_Data.txt", row.names = FALSE)
