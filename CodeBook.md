@@ -50,8 +50,11 @@ For each record in the dataset it is provided:
 
 ## Final_Tidy_Data Outputs:
 
-1. Subject
-2. Activity_ID
+1. Subject: Subject ID
+2. Activity_ID: Activity ID (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The following measure the mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration), the estimated body acceleration and the triaxial Angular velocity from the gyroscope.
+
 3. TimeBodyAccelerometer.mean...X                    
 4. TimeBodyAccelerometer.mean...Y
 5. TimeBodyAccelerometer.mean...Z
