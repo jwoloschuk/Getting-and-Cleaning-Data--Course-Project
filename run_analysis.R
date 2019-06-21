@@ -19,7 +19,7 @@ zipURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20
 rawzipfile <- "Getting_Data_Project.zip"
 
 
-# Checks is the "UCI HAR Dataset" directory exists. If not, checks to see if the
+# Checks if the "UCI HAR Dataset" directory exists. If not, checks to see if the
 # zip file is in the directory, if not, then downloads the zip file. The zip file
 # is then unzipped and the zipfile is then removed from the working directory.
 
