@@ -19,7 +19,7 @@ For each record in the dataset it is provided:
 
 ### run_analysis.R Steps and Variables:
 
-1. Checks is the "UCI HAR Dataset" directory exists. If not, checks to see if the zip file is in the directory, if not, then downloads the zip file. The zip file is then unzipped and the zipfile is then removed from the working directory.
+1. Checks if the "UCI HAR Dataset" directory exists. If not, checks to see if the zip file is in the directory, if not, then downloads the zip file. The zip file is then unzipped and the zipfile is then removed from the working directory.
     * zipURL: URL for the zip file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
     * rawzipfile: name of the zip file (Getting_Data_Project.zip)
 
