@@ -76,7 +76,7 @@ selected_DF <- select(total_DF, Subject, Activity_ID, contains("mean"), contains
 # Change the Acticity ID to the descriptive activity type
 selected_DF$Activity_ID <- activites_labels[selected_DF$Activity_ID,2]
 
-# Relable column headers to be more descriptive
+# Relabel column headers to be more descriptive
 
 names(selected_DF) <- gsub("^t", "Time",names(selected_DF))
 names(selected_DF) <- gsub("^f", "Frequency", names(selected_DF))
