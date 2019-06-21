@@ -10,8 +10,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ### Files:
 
-#### r_analysis.R
-Script collects, work with, and clean a data set
+#### run_analysis.R
+Script collects, work with, and clean a data set by:
   1. Merges the training and the test sets to create one data set.
   2. Extracts only the measurements on the mean and standard deviation for each measurement.
   3. Uses descriptive activity names to name the activities in the data set
@@ -22,4 +22,4 @@ Script collects, work with, and clean a data set
 Describes the variables, the data, and any process to clean up the data
 
 #### Final_Tidy_Data.txt
-The exported final data text file produced from the r_analysis.R script
+The exported final data text file produced from the run_analysis.R script
