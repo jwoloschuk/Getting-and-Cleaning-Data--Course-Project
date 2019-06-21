@@ -41,10 +41,10 @@ For each record in the dataset it is provided:
 
 4. Merge X, Y and Subject dataframes into a single dataframe using cbind()  
     * total_DF: A single dataframe with X, Y and Subject dataframes
-5. Use select() to select mean and standard deviation (std) measurement columns 
+5. Use select() and contains() to select mean and standard deviation (std) measurement columns 
     * selected_DF: Dataframe containing the select mean and standard deviation (std) measurement columns, Subject and Activity_ID
-6. Change the Acticity_ID to the descriptive activity type and relabel column headers to be more descriptive
-7. Create a new tidy dataframe with groups based on Subject and Activity_ID. Summarize by averaging each column by the Subject and Activity_ID groups.
+6. Change the Acticity_ID to the descriptive activity type and relabel column headers to be more descriptive using gsub() and names() functions
+7. Create a new tidy dataframe with groups based on Subject and Activity_ID. Summarize by averaging each column by the Subject and Activity_ID groups. Use group_by() function.
     * Tidy_DF: A new tidy dataframe with groups based on Subject and Activity_ID, summarized by averaging each column by the Subject and   Activity_ID groups
 8. Create final tidy data text file
 
