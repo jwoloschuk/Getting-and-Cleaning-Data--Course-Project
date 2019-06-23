@@ -16,6 +16,8 @@ For each record in the dataset it is provided:
   * A 561-feature vector with time and frequency domain variables. 
   * Its activity label. 
   * An identifier of the subject who carried out the experiment.
+ 
+  A full description of the raw data can be found here:      http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ### run_analysis.R Steps and Variables:
 
