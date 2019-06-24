@@ -104,7 +104,7 @@ Tidy_DF <- selected_DF %>%
         summarize_all(list(mean))
 
 
-# Move up two directories and create final tidy data text file
+# Move up two directories and create final tidy data text file (180 observations and 88 variables)
 
 setwd("../..")
 write.table(Tidy_DF, "Final_Tidy_Data.txt", row.names = FALSE)
