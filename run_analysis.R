@@ -71,7 +71,7 @@ total_DF <- cbind(subject_DF,x_DF,y_DF)
 
 # Select mean and standard deviation (std) measurement columns
 
-selected_DF <- select(total_DF, Subject, Activity_ID, contains("mean"), contains("std"))
+selected_DF <- total_DF %>% select(Subject, Activity_ID, contains("mean"), contains("std"))
 
 # Change the Acticity ID to the descriptive activity type
 selected_DF$Activity_ID <- activites_labels[selected_DF$Activity_ID,2]
@@ -89,12 +89,19 @@ names(selected_DF) <- gsub("Mag", "Magnitude",names(selected_DF))
 names(selected_DF) <- gsub("t[bB]ody", "TimeBody",names(selected_DF))
 names(selected_DF) <- gsub("gravity", "Gravity",names(selected_DF))
 names(selected_DF) <- gsub("angle", "Angle",names(selected_DF))
-
+names(selected_DF) <- gsub("-mean()", "Mean", names(selected_DF), ignore.case = TRUE)
+names(selected_DF) <- gsub("-std()", "STD", names(selected_DF), ignore.case = TRUE)
+names(selected_DF) <- gsub("-freq()", "Frequency", names(selected_DF), ignore.case = TRUE)
 
 # Create a new tidy dataframe with groups based on Subject and Activity_ID
-# Summarize by averaging each column by the Subject and Activity_ID groups
 
-Tidy_DF <- selected_DF %>% group_by(Subject, Activity_ID) %>% summarize_all(funs(mean))
+Tidy_DF <- selected_DF %>% 
+        
+        group_by(Subject, Activity_ID) %>% 
+
+# Summarize by averaging each column by the Subject and Activity_ID groups                
+        
+        summarize_all(list(mean))
 
 
 # Move up two directories and create final tidy data text file
