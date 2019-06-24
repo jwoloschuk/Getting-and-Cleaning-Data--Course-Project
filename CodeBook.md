@@ -1,6 +1,6 @@
 # CodeBook 
 
-This code book summarizes the data and variables in Final_Tidy_Data.txt
+This code book summarizes the data and variables in Final_Tidy_Data.txt. This data frame is composed of 180 observations and 88 variables. For each of the 6 subjects participating in this study, there are total of 30 observations.
 
 ### Dataset Information:
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -16,6 +16,8 @@ For each record in the dataset it is provided:
   * A 561-feature vector with time and frequency domain variables. 
   * Its activity label. 
   * An identifier of the subject who carried out the experiment.
+ 
+  A full description of the raw data can be found here:      http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ### run_analysis.R Steps and Variables:
 
@@ -54,6 +56,8 @@ For each record in the dataset it is provided:
 2. Activity_ID: Activity identifier (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 The following numeric varaibles (3-88) measure the mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration), the estimated body acceleration and the triaxial angular velocity from the gyroscope.
+
+Note: The acceleration measurements from the smartphone accelerometer are measured in standard gravity units 'g'. The body acceleration signal obtained by subtracting the gravity from the total acceleration. The angular velocity vector measured by the gyroscope have units of radians/second.
 
 3. TimeBodyAccelerometer.mean...X                    
 4. TimeBodyAccelerometer.mean...Y
