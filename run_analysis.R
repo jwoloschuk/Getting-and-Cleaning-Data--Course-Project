@@ -89,9 +89,9 @@ names(selected_DF) <- gsub("Mag", "Magnitude",names(selected_DF))
 names(selected_DF) <- gsub("t[bB]ody", "TimeBody",names(selected_DF))
 names(selected_DF) <- gsub("gravity", "Gravity",names(selected_DF))
 names(selected_DF) <- gsub("angle", "Angle",names(selected_DF))
-names(selected_DF) <- gsub("-mean()", "Mean", names(selected_DF), ignore.case = TRUE)
-names(selected_DF) <- gsub("-std()", "STD", names(selected_DF), ignore.case = TRUE)
-names(selected_DF) <- gsub("-freq()", "Frequency", names(selected_DF), ignore.case = TRUE)
+names(selected_DF) <- gsub("mean", "Mean", names(selected_DF), ignore.case = TRUE)
+names(selected_DF) <- gsub("std", "STD", names(selected_DF), ignore.case = TRUE)
+names(selected_DF) <- gsub("freq", "Frequency", names(selected_DF), ignore.case = TRUE)
 
 # Create a new tidy dataframe with groups based on Subject and Activity_ID
 
