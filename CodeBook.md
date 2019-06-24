@@ -57,6 +57,8 @@ For each record in the dataset it is provided:
 
 The following numeric varaibles (3-88) measure the mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration), the estimated body acceleration and the triaxial angular velocity from the gyroscope.
 
+Note: The acceleration measurements from the smartphone accelerometer are measured in standard gravity units 'g'. The body acceleration signal obtained by subtracting the gravity from the total acceleration. The angular velocity vector measured by the gyroscope have units of radians/second.
+
 3. TimeBodyAccelerometer.mean...X                    
 4. TimeBodyAccelerometer.mean...Y
 5. TimeBodyAccelerometer.mean...Z
