@@ -16,7 +16,7 @@ Script collects, work with, and clean a data set by:
   2. Extracting only the mean and standard deviation measurements (86 unique measurements).
   3. Updates the descriptive activity names to name the activities in the data set
   4. Appropriately labels the data set with descriptive variable names.
-  5. Finally creates an independent tidy data text file set with the average of each variable for each activity and each of the 30 subjects.
+  5. Finally creates an independent tidy data set / text file with the average of each variable for each activity and for the 30 subjects.
 
 #### CodeBook.md
 Describes the variables, the data, and any process to clean up the data
